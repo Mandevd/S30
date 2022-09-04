@@ -21,7 +21,7 @@ public class RotatedArray {
             {
                 return mid;
             }
-            else if(nums[low]<nums[mid])//left part
+            else if(nums[low]<nums[mid])//left part is sorted
             {
                 if(target>=nums[low] && target<nums[mid])
                 {
@@ -29,7 +29,7 @@ public class RotatedArray {
                 }
                 else low = mid+1;
             }
-            else//right part
+            else//right part is sorted
             {
                 if(target<=nums[high] && target>nums[mid] )
                 {
