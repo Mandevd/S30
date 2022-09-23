@@ -23,7 +23,7 @@ public class InfiniteBinarySearch {
             low =
             high =high*2;
         }
-        return binarySearch(reader, target,0,high)
+        return binarySearch(reader, target,low,high)
     }
         private int binarySearch(CharArrayReader reader,int target,int low,int high){
             while(low<=high){
